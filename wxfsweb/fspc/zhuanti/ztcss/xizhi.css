@@ -1,0 +1,64 @@
+body,div,img,p,a{width: 100%}
+.section{font-size: 0}
+.H20-gray{
+height: 20px;
+background: #eeeeee;
+}
+
+
+.order_wrap{
+    background: #a6517a;
+}
+.p_order_top ,
+.p_order_bottom{
+    color: #fff;
+}
+
+.inp_top,.inp_bottom {
+    color: #a6517a;
+}
+
+#send_top,
+#send_bottom {
+    color: #a6517a;
+    background-color:#fff ;
+}
+.result_top {
+    color: #fff;
+}
+.section1,
+.section2,
+.section3{
+    position: relative;
+}
+.a_btn{
+    position: absolute;
+    display: block;
+    height: 150px;
+    background: #f00;
+    opacity: 0;
+    bottom: 100px;
+    
+}
+.foot{
+    background:#e8d0b6;
+}
+
+.footlink{
+    color:#fff;
+}
+.link1,.link3{
+   background:#e8d0b6;
+}
+.link2{
+    color:#e8d0b6;
+    background:#fff;
+}
+#ad{
+    background: url(../ztimg/adtc.gif) no-repeat;
+}
+  
+.ad_close{
+    background: url(../ztimg/close.png);
+    background-size: contain;
+}

@@ -1,0 +1,244 @@
+body,div,img,p,a{width: 100%}
+.banner{
+    font-size: 0
+}
+.empty{
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+.be_after{
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    background: #e67e22;
+    font-size: 0
+}
+.betxt{
+    width: 30%;
+    height: 70px;
+    padding-top: 10px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    color:#fff;
+}
+.before,
+.after{
+    position: relative;
+    width: 35%;
+    height: 100px;
+}
+.span{
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    right:2px;
+    width: 55px;
+    height:15px;
+    background: #361e52;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 12px;
+    text-align: center;
+    
+}
+.before{
+   
+     background: url(../ztimg/quban/qubanbefore1.jpg) no-repeat 50% 0;
+}
+.after{
+     width: 35%;
+     height: 100px;
+   background: url(../ztimg/quban/qubanafter2.jpg) no-repeat 50% 0;
+}
+.order_wrap{
+    padding-top: 30px;
+    height: 90px;
+    background: #e67e22;
+}
+.p_order_top,
+.p_order_bottom{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.inp_top,
+.inp_bottom {
+    width: 70%;
+    height: 40px;
+    padding-left: 15px;
+    border: 0;
+    box-sizing: border-box;
+    color: #e67e22;
+    box-shadow: 1px 1px 1px 1px rgba(72, 11, 11, 0.3)inset;
+}
+
+#send_top,
+#send_bottom{
+    display: block;
+    float: right;
+    width: 28%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #e67e22;
+    background-color:#fff ;
+}
+.result_top {
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+.section{
+    width: 100%;
+}
+.section1 h2,.section2 h2{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color:#666366;
+    font-weight: 400;
+}
+.section1 h6{
+    padding-left: 5px;
+    margin:  10px 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color:#e67e22;
+    font-weight: 200;
+    box-sizing: border-box;
+    
+}
+.step{
+    width: 95%;
+    margin:0 auto;
+}
+.step_title{
+    padding: 10px;
+    font-size: 14px;
+    color:#555;
+    box-sizing: border-box;
+}
+.step_content{
+    padding:5px 0 5px 5px;
+    height: auto;
+    box-sizing: border-box;
+    background: url(../ztimg/quban/qubanbox_bg.jpg) right bottom no-repeat  #ececec;
+     color:#555;
+}
+.step_pic{
+    font-size:0;
+    width: 35%;
+}
+.step_txt{
+    font-size: 10px;
+    width: 65%;
+    padding-left:15px;
+    height: 100%;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+.tj_table{
+    width: 98%;
+    margin: 0 auto;
+    background: #FFF;
+    font-size: 10px;
+    
+}
+.tj_table td {
+    padding:8px;
+}
+.tj_table_font28 {
+    color: #b95d0c;
+    background: #f5cba7;
+}
+.tj_table_td {
+    border-left-color: #e1b792;
+    border-top-color: #e1b792;
+}
+.tj_table_font28 {
+    color: #b95d0c;
+    background: #f5cba7;
+    line-height: 16px;
+    padding: 5px 0;
+}
+.tj_table_td1 {
+    border:#e1b792 solid 1px;
+    border-color: #ea9d95;
+    border-bottom: none;
+}
+.tj_table_td {
+    border-left-color: #e1b792;
+    border-top-color: #e1b792;
+    border-left:  #e1b792 solid 1px;
+    border-top: #e1b792 solid 1px;
+}
+.table, table td {
+    padding: 0;
+    border: none;
+    border-collapse: collapse;
+}
+
+.tj_table_menu_bg {
+    background: #eb984e;
+    color: #FFF;
+    font-weight: bold;
+    border: #e58938 solid 1px;
+    border-right: none;
+}
+.tj_table_r {
+    border-right: #e58938 solid 1px
+}
+.tj_table_td_b {
+    border-left-color: #e1b792;
+    border-bottom-color: #e1b792;
+}
+.tj_table_td_b1 {
+    border-top: none;
+}
+.tj_table_td_b1 {
+    border: #e1b792 solid 1px;
+    border-top: none;
+}
+.tj_table_td_b {
+    border-left: #e1b792 solid 1px;
+    border-bottom: #e1b792 solid 1px;
+}
+.a_link {
+    background-color: #e58938;
+    color: #fff;
+}
+.foot{
+    background:#e58938;
+}
+
+.footlink{
+    color:#fff;
+}
+.link1,.link3{
+   background:#e58938;
+}
+.link2{
+    color:#e58938;
+    background:#fff;
+}
+#ad{
+    background: url(../ztimg/adtc.gif) no-repeat;
+}
+  
+.ad_close{
+    background: url(../ztimg/close.png);
+    background-size: contain;
+}

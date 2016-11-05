@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>silder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+
+    <style>
+        #banner {
+            width: 100%;
+            position: relative;
+            height: 25px;
+            background: #000;
+            overflow: hidden;
+        }
+        #oUl {
+            width: 100%;
+            position: absolute;
+        }
+        #oUl li {
+            color: #fff;
+            height: 25px;
+        }
+        
+        
+        #pic{
+            width: 100%;
+            height: auto;
+            font-size:0;
+            overflow: hidden;
+        }
+        #oUl1 {
+             position: absolute;
+             width:2000px;
+            
+        }
+        #oUl1 li{
+            width: 320px;
+            float: left;
+        }
+        #oUl1 li img{
+            width: 100%;
+        }
+    </style>
+    <script src='http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js'></script>
+</head>
+
+<body>
+    
+    <div id='banner'>
+        <ul id="oUl">
+            <li>你的好友1已经上线</li>
+            <li>你的好友2已经上线</li>
+            <li>你的好友3已经上线</li>
+            <li>你的好友4已经上线</li>
+            <li>你的好友5已经上线</li>
+            <li>你的好友6已经上线</li>
+            <li>你的好友7已经上线</li>
+            <li>你的好友8已经上线</li>
+        </ul>
+
+    </div>
+
+    <div id='pic'>
+        <ul id="oUl1" class="clearfix">
+            <li> <img src="img/banner1.png" alt=""> 
+            </li> 
+            <li>
+                <img src="img/banner2.png" alt="">
+            </li>
+            <li>
+                <img src="img/banner3.png" alt="">
+            </li>
+        </ul>
+
+    </div>
+    <script>
+        function autoScroll(obj, ul_bz) {
+            $(obj).find(ul_bz).animate({
+                marginTop: "-25px"
+            }, 500, function () {
+                $(this).css({
+                    marginTop: "0px"
+                }).find("li:first").appendTo(this);
+            });
+        }
+         function autoScroll1(obj, ul_bz) {
+            $(obj).find(ul_bz).animate({
+                marginLeft: Swidth+'px'
+            }, 500, function () {
+                $(this).css({
+                    marginLeft: "0px"
+                }).find("li:first").appendTo(this);
+            });
+        }
+      
+        
+    $(function(){
+        // 获取页面可见区域宽度
+        var Swidth = document.documentElement.clientWidth; 
+        console.log(Swidth)
+        // 重新定义横向滚动li ,ul的宽度
+        $('#pic li').css({width:Swidth+'px'})
+                       
+        var timer = null;
+        function _loop(){
+        clearTimeout(timer);
+        timer = setTimeout(function(){
+         autoScroll("#banner", "#oUl");
+        _loop();
+            
+        },3000)
+            
+        }
+          _loop();
+        
+        
+        var timer1 = null;
+       function _loop1(){
+          clearTimeout(timer1);  
+        timer1 = setTimeout(function(){
+            autoScroll1("#pic", "#oUl1");
+             _loop1();
+        },3000)
+       } 
+        
+       _loop1(); 
+    })
+    </script>
+</body>
+
+</html>

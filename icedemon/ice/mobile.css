@@ -1,0 +1,244 @@
+/*手机适配 */
+
+@media screen and (max-width: 960px) {
+	/*首页动画*/
+	#headbg {
+		position: relative;
+		width: 100%;
+		height: 550px;
+		margin: 0;
+		text-align: center;
+		background: url(13mohu.jpg) no-repeat 50% 0;
+	}
+	.solan {
+		position: absolute;
+		top: 30%;
+		width: 100%;
+		height: 20%;
+	}
+	#nav {
+		width: 100%;
+	}
+	#nav ul,
+	.content {
+		width: 100%;
+	}
+	#nav a {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		font-size: 16px;
+		font-weight: 500;
+	}
+	/*手机屏幕太小黑线动画直接去掉*/
+	#nav .line {
+		display: none;
+	}
+	.about {
+		background: none;
+	}
+	.section h2 {
+		font-size: 20px;
+		font-weight: 200;
+		width: 100%;
+		text-align: center;
+	}
+	.introduce {
+		width: 100%;
+		margin: 20px 0px;
+	}
+	.introduce p {
+		text-align: center;
+		font-size: 16px;
+		height: 36px;
+		line-height: 36px;
+	}
+	.pul {
+		width: 100%;
+		margin: 20px 0;
+	}
+	.small-img {
+		float: left;
+		width: 90%;
+		height: 200px;
+		margin: 10px 5%;
+	}
+	.cooperation h3 {
+		width: 80%;
+		margin: 50px auto;
+		text-align: center;
+		font-weight: 400;
+		font-size: 30px;
+	}
+	.q1 {
+		padding-left: 20px;
+	}
+	.q2 {
+		padding-right: 20px;
+	}
+	.items dl,
+	.how dl {
+		float: left;
+		width: 100%;
+	}
+	.join dl {
+		width: 100%;
+	}
+	.items dl {
+		margin-bottom: 30px;
+	}
+	.items h4,
+	.join h4,
+	.how h4 {
+		text-align: center;
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.readmore a {
+		font-size: 16px;
+		text-decoration: underline;
+		color: #D51E23;
+	}
+	.contact {
+		min-height: 300px;
+		background: url(9-2.jpg) no-repeat 50% 0;
+	}
+	.tel {
+		position: absolute;
+		width: 100%;
+		top: 20%;
+	}
+	.tel h1 {
+		font-size: 36px;
+		font-weight: 300;
+		line-height: 100px;
+	}
+	.tel h3 {
+		font-size: 18px;
+		line-height: 50px;
+		font-weight: 500;
+	}
+	.tel h4 {
+		font-size: 16px;
+		line-height: 50px;
+		font-weight: 500;
+	}
+	.wrap2 {
+		width: 100%;
+		min-height: 500px;
+		margin: 10px auto;
+	}
+	.back {
+		display: block;
+		width: 80%;
+		font-size: 16px;
+	}
+	.line-box {
+		display: block;
+		left: 10%;
+		width: 80%;
+		height: 40px;
+		font-size: 16px;
+	}
+	.ulbg {
+		display: none;
+	}
+	.newscont li {
+		position: relative;
+		margin-bottom: 0;
+		width: 95%;
+		left: 5%;
+		height: 50px;
+		font-size: 14px;
+	}
+	.newscont li span,
+	.newscont li i {
+		position: absolute;
+		top:8px;
+		color: #fff;
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		font-size: 12px;
+	}
+	.newscont li i {
+		left: 20px;
+	}
+	.newscont li a {
+		position: absolute;
+		left: 0;
+		top: 30px;
+		line-height: 20px;
+	}
+	#scrollimg {
+		position: relative;
+		width: 100%;
+		height: 320px;
+		overflow: hidden;
+		margin: 20px 0;
+	}
+	.prev,
+	.next,
+	.mask {
+		display: none;
+	}
+	.citycheck {
+		width: 20%;
+	}
+	.citycheck > input {
+		text-align: center
+	}
+	.citycheck > a {
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 25px;
+		font-size: 14px;
+	}
+	#meunul {
+		margin-top: 30px;
+	}
+	#meunul li {
+		position: relative;
+		width: 95%;
+		left: 5%;
+		font-size: 14px;
+		height: 60px;
+		line-height: 20px;
+		border-bottom-style: none;
+	}
+	#meunul li i {
+		position: absolute;
+		top: -20px;
+		color: #D51E23
+	}
+	.foot {
+		width: 98%;
+		margin: 0 auto;
+		border: 4px solid #000;
+	}
+	.footwrap {
+		width: 98%;
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.foot i {
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+@media screen and (max-width: 960px)and  (min-width: 600px) {
+	
+	.small-img{
+
+float: left;
+width: 45%;
+height: 180px;
+margin: 10px 2%;
+	}
+	.small-img:last-child{
+		display: none;
+	}
+}

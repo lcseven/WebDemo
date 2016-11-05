@@ -1,0 +1,218 @@
+body,div,img,p,a{width: 100%}
+.banner{
+    font-size: 0
+}
+.orange{
+     background: #ff9900;
+}
+
+.blue{
+    background:#66ccff;
+}
+
+.about {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #d9f2ff;
+}
+.order_top{
+    height: 200px;
+    background: url(../ztimg/water/m9bg.jpg) no-repeat 50% 50%;
+}
+.water_order{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    color: #fff;
+}
+.p_order_top{
+    padding-top:60px;
+}
+.p_order_bottom{
+    padding-top:20px;
+}
+.inp_top,
+.inp_bottom {
+    padding-left:15px;
+}
+
+.result_top{
+   
+    color:#fff;
+}
+.section{
+      font-size: 0
+}
+.section1,
+.section3,
+.section5{
+    background: #d9f2ff;
+    height: auto;
+    padding-top: 20px;
+  
+}
+.section1 ul{
+    padding-top: 20px;
+}
+.section1 li{
+    position: relative;
+    width: 33%;
+    height: 100px;
+    text-align: center;
+    color:#fff;
+}
+.section1 i{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin:0 auto;
+    border-radius: 70px;
+}
+.section1 em{
+    display: block;
+    position: absolute;
+    top:0;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    line-height:70px; 
+    font-size: 20px;
+}
+.section2{
+    height: auto;
+}
+.section2 li{
+    width: 33%;
+    margin: 20px 0 0;
+}
+.section2 span{
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+}
+.section3 p{
+    padding: 20px 5%;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666666;
+    box-sizing: border-box;
+}
+.section3 ul{
+    width: 96%;
+    margin: 0 auto;
+}
+.four{
+    width: 49%;
+    margin: 10px 0 0;
+}
+.fourgirl{
+    width: 50%;
+    height: 186px;
+   
+}
+.girl1{
+   background: url(../ztimg/water/m61.jpg) no-repeat;
+   background-size: cover;  
+}
+.girl2{
+    background: url(../ztimg/water/m62.jpg) no-repeat;
+   background-size: cover; 
+}
+.girl3{
+    background: url(../ztimg/water/m63.jpg) no-repeat;
+   background-size: cover; 
+}
+.girl4{
+    background: url(../ztimg/water/m64.jpg) no-repeat;
+   background-size: cover; 
+}
+.fourtxt{
+    width: 50%;
+     height: 186px;
+    overflow: hidden;
+    color:#fff;
+    font-size: 14px;   
+}
+.txt1{
+    background-color: #479cec;
+}
+.txt2{
+    background-color: #30d4ad;
+}
+.txt3{
+    background-color: #fd82aa;
+}
+.txt4{
+    background-color: #a061d6;
+}
+.fourtxt h3{
+    width: 100%;
+    padding: 20% 0 10%;
+    text-align: center;
+}
+.fourtxt h4{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 12px;
+    font-weight: 200;
+}
+.a_link{
+    background-color: #66ccff;
+    color: #ffffff;
+}
+.section4{
+     background-color: #f0f0f0;
+}
+.machine{
+    width: 92%;
+    margin: 0 auto;
+    height: auto;
+    padding: 30px 0;
+   
+}
+.section5 ul{
+    width: 96%;
+    margin: 0 auto;
+    overflow: hidden; 
+}
+.section5 li{
+    width: 46%;
+    margin: 20px 2% 0;
+}
+
+.section6{
+    background: url(../ztimg/water/m9bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 30px 0;
+}
+.mianmo{
+    padding: 20px 0;
+}
+.s6{
+    width: 75%;
+    margin: 0 auto;
+}
+.foot{
+    background:#479cec;
+}
+
+.footlink{
+    color:#fff;
+}
+.link1,.link3{
+   background:#479cec;
+}
+.link2{
+    color:#479cec;
+    background:#fff;
+}
+#ad{
+    background: url(../ztimg/adtc.gif) no-repeat;
+}
+  
+.ad_close{
+    background: url(../ztimg/close.png);
+    background-size: contain;
+}

@@ -1,0 +1,452 @@
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>设备对比</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/dcalendar.picker.css" / rel="stylesheet">
+	<link href="css/compare.css" rel="stylesheet">
+	<link href="css/layout.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/echarts.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid padding0  wrap">
+		<div class="row">
+			<!--left control-menu start-->
+			<div class="col-md-2  left-nav-wrap">
+				<div class="logo">
+					<img src="images/logo.png" alt="logo">
+				</div>
+				<ul class="left-nav-bar">
+					<li>
+						<i class="left-li-active">
+						<em class="flt"><span class="glyphicon glyphicon-list"></span></em>电站列表<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span></em><em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span></em></i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+
+					</li>
+					<li>
+						<i>
+						<em class="flt">
+						<span class="glyphicon glyphicon-wrench"></span>
+						</em>故障信息
+						<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span>
+						</em>
+						<em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span>
+						</em>
+						</i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+					</li>
+					<li>
+						<i>
+						<em class="flt">
+						<span class="glyphicon glyphicon-folder-open"></span>
+						</em>数据图表
+						<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span>
+						</em>
+						<em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span>
+						</em>
+						</i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+					</li>
+					<li>
+						<i>
+						<em class="flt">
+						<span class="glyphicon glyphicon-book"></span>
+						</em>报表导出
+						<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span>
+						</em>
+						<em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span>
+						</em>
+						</i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+					</li>
+					<li>
+						<i>
+						<em class="flt">
+						<span class="glyphicon glyphicon-ok-sign"></span>
+						</em>设置
+						<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span>
+						</em>
+						<em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span>
+						</em>
+						</i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!--left control-menu end-->
+			<!--right body start-->
+			<div class="col-md-10 main-contain-wrap ">
+				<!--right-head-nav start-->
+				<div class="header clearfix">
+					<div class="header-nav-wrap flt">
+						<ul class="header_nav_list clearfix">
+							<li class="header_nav header-nav-active flt">智能监控</li>
+							<li class="header_nav flt">电站设计</li>
+							<li class="header_nav flt">售后维护</li>
+							<li class="header_nav flt">电子商务</li>
+						</ul>
+
+					</div>
+					<div class="user-infro frt">
+						Welcome
+						<img src="images/szj.png" alt="user-infro img">宋仲基
+						<span class="split-line"></span>
+						<a href="" class="back">退出</a>
+					</div>
+				</div>
+				<!--right-head-nav end-->
+				<div class="header-sub-nav">
+					<span>当前位置：</span>
+					<a href="#">首页</a> &gt;
+					<a href="#">数据图表</a> &gt;
+					<a href="#">设备图表</a> 
+				</div>
+				<!--right-container srart-->
+				<div class="container-fluid  padding0 body-container-wrap">
+					<div class="row">
+						<em class="em-left"><span class="glyphicon glyphicon-chevron-left"></span></em>
+						<em class="em-right"><span class="glyphicon glyphicon-chevron-right"></span></em>
+						<div class="col-md-6">
+							<div class="itembox-wrap mlf">
+								<div class="equipment-title ft16">逆变器:DW123456</div>
+								<table class="power-table ft12">
+									<tbody>
+										<tr>
+											<td>状态</td>
+											<td>正常</td>
+										</tr>
+										<tr>
+											<td>当日发电量</td>
+											<td>120.9KWh</td>
+										</tr>
+										<tr>
+											<td>当月发电量</td>
+											<td>699.9KWh</td>
+										</tr>
+										<tr>
+											<td>当年发电量</td>
+											<td>1699.9KWh</td>
+										</tr>
+										<tr>
+											<td>总发电</td>
+											<td>1699.9KWh</td>
+										</tr>
+										<tr>
+											<td>实际功率</td>
+											<td>99.9KWh</td>
+										</tr>
+
+									</tbody>
+
+
+								</table>
+								<div class="chart-wrap">
+									<div class="power-select">
+										<i>发电量</i>
+
+										<input type="radio" value="日" name='date'>
+										<label for="日">
+											<span> 日 </span>
+										</label>
+										<input type="radio" value="月" name='date'>
+										<label for="月">
+											<span> 月 </span>
+										</label>
+										<input type="radio" value="年" name='date'>
+										<label for="月">
+											<span> 年 </span>
+										</label>
+										<input type="radio" value="总" name='date'>
+										<label for="总">
+											<span> 总 </span>
+
+										</label>
+										<div class="date-seclect">
+											<span class="glyphicon glyphicon-chevron-left"></span>
+											<input id='mydatepicker' class="mydatepicker" placeholder="7/22/2016" type='text' />
+											<span class="glyphicon glyphicon-chevron-right"></span>
+											<span></span>
+										</div>
+
+										<i class="frt">今日每小时发电量(KWh)</i>
+									</div>
+									<div id="main" style="height:250px;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="itembox-wrap mrf">
+								<div class="equipment-title ft16">逆变器:DW123456</div>
+								<table class="power-table ft12">
+									<tbody>
+										<tr>
+											<td>状态</td>
+											<td>正常</td>
+										</tr>
+										<tr>
+											<td>当日发电量</td>
+											<td>120.9KWh</td>
+										</tr>
+										<tr>
+											<td>当月发电量</td>
+											<td>699.9KWh</td>
+										</tr>
+										<tr>
+											<td>当年发电量</td>
+											<td>1699.9KWh</td>
+										</tr>
+										<tr>
+											<td>总发电</td>
+											<td>1699.9KWh</td>
+										</tr>
+										<tr>
+											<td>实际功率</td>
+											<td>99.9KWh</td>
+										</tr>
+
+									</tbody>
+
+
+								</table>
+								<div class="chart-wrap">
+									<div class="power-select">
+										<i>发电量</i>
+
+										<input type="radio" value="日" name='date'>
+										<label for="日">
+											<span> 日 </span>
+										</label>
+										<input type="radio" value="月" name='date'>
+										<label for="月">
+											<span> 月 </span>
+										</label>
+										<input type="radio" value="年" name='date'>
+										<label for="月">
+											<span> 年 </span>
+										</label>
+										<input type="radio" value="总" name='date'>
+										<label for="总">
+											<span> 总 </span>
+
+										</label>
+										<div class="date-seclect">
+											<span class="glyphicon glyphicon-chevron-left"></span>
+											<input id='mydatepicker2' class="mydatepicker" placeholder="7/22/2016" type='text' />
+											<span class="glyphicon glyphicon-chevron-right"></span>
+											<span></span>
+										</div>
+
+										<i class="frt">今日每小时发电量(KWh)</i>
+									</div>
+									<div id="main-two" style="height:250px;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--right-container end-->
+				<!--foot start -->
+				<div class="foot">
+					<p>2016 &copy;Le-PV operation &amp; maintenace platform</p>
+				</div>
+				<!--foot end -->
+			</div>
+			<!--right body end-->
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('body').on('click', 'em.right', function () {
+				$(this).hide();
+				$(this).next().show();
+				$(this).parent().addClass('left-li-active');
+				$(this).parent().next().show();
+
+
+			});
+			$('body').on('click', 'em.down', function () {
+
+				$(this).hide();
+				$(this).prev().show();
+				$(this).parent().removeClass('left-li-active');
+				$(this).parent().next().hide();
+
+			});
+			$('body').on('click', 'li.header_nav', function () {
+				$(this).addClass('header-nav-active');
+				$(this).siblings().removeClass('header-nav-active');
+
+			});
+			$('#mydatepicker').dcalendarpicker(
+
+			); //初始化日期选择器
+			$('#mycalendar').dcalendar(); //初始化日历  
+			
+			$('#mydatepicker2').dcalendarpicker(
+
+			); //初始化日期选择器
+			$('#mycalendar2').dcalendar(); //初始化日历  
+
+			/*折线柱状图代码*/
+			var myChart = echarts.init(document.getElementById('main'));
+			var myChart2 = echarts.init(document.getElementById('main-two'));
+
+			// 指定图表的配置项和数据
+			var option = {
+
+				tooltip: {
+					trigger: 'axies',
+					backgroundColor: 'rgba(65,82,101,0.7)',
+					borderColor: 'rgba(0,0,0,0)',
+					borderWidth: '50px'
+				},
+				toolbox: {
+
+
+					feature: {
+						dataView: {
+							show: true,
+							readOnly: false
+						},
+						magicType: {
+							show: true,
+							type: ['line', 'bar']
+						},
+						restore: {
+							show: true
+						},
+						saveAsImage: {
+							show: true
+						}
+					},
+					show: false,
+				},
+				color: ['#87e67e', '#2a918e'],
+				backgroundColor: '#303642',
+
+				textStyle: {
+					color: '#fff',
+					fontStyle: 'normal',
+					fontSize: 12,
+				},
+				legend: {
+
+					show: ['true'],
+					data: ['tempertaure', 'rainfall'],
+					width: '100px',
+					height: '50px',
+					top: '100px',
+					left: '100px',
+					orient: 'vertical',
+					backgroundColor: 'rgba(0, 0, 0,0.7)',
+					textStyle: {
+						color: '#fff',
+
+					}
+
+				},
+				xAxis: [
+					{
+						type: 'category',
+						data: ['', '', '', '', '', '', '', '', '', '', '', '']
+        }
+    ],
+				yAxis: [
+
+					{
+						type: 'value',
+						name: '温度',
+						min: 0,
+						max: 20,
+						interval: 5,
+						axisLabel: {
+							formatter: '{value} °C'
+						}
+        },
+					{
+						type: 'value',
+						name: '水量',
+						min: 0,
+						max: 200,
+						interval: 50,
+						axisLabel: {
+							formatter: '{value} ml'
+						}
+        }
+    ],
+				series: [
+
+					{
+						name: 'tempertaure',
+						type: 'line',
+						yAxisIndex: 0,
+						data: [2.0, 3.2, 4.3, 5.5, 6.3, 7.2, 8.9, 10.4, 9.0, 7.0, 4.0, 3.2]
+        },
+					{
+						name: 'rainfall',
+						type: 'bar',
+						yAxisIndex: 1,
+						data: [50, 60, 65, 70, 100, 70.7, 120, 160, 100, 80, 60, 50]
+        },
+    ]
+			};
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+			myChart2.setOption(option);
+
+
+		});
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/dcalendar.picker.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+body,div,img,p,a{width: 100%}
+
+.order_wrap{
+    background: #bb88c3;
+}
+.p_order_top,
+.p_order_bottom{
+    color: #fff;
+}
+
+.inp_top,
+.inp_bottom{
+    color: #bb88c3;
+}
+
+#send_top,
+#send_bottom{
+    color: #bb88c3;
+    background-color:#fff ;
+}
+.result_top {
+    color: #fff;
+}
+.section1{
+    width: 96%;
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+    color:#333;
+    box-sizing: border-box;
+}
+.sh3 {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px; 
+    color:black;
+    
+}
+.section1 span {
+   display: block;
+    height: 35px;
+    line-height: 35px;
+   font-size: 16px;
+   font-weight: 300;
+    color:#c36fd0
+}
+.section1 p{
+    font-size: 14px;
+    line-height: 28px;
+}
+.section1 b{
+    color:#c36fd0;
+    font-size: 14px;
+    font-weight: 300;
+}
+.a_link {
+    background-color: #bb88c3;
+    color: #fff;
+}
+.foot{
+    background:#bb88c3;
+}
+
+.footlink{
+    color:#fff;
+}
+.link1,.link3{
+   background:#bb88c3;
+}
+.link2{
+    color:#bb88c3;
+    background:#fff;
+}
+#ad{
+    background: url(../ztimg/adtc.gif) no-repeat;
+}
+  
+.ad_close{
+    background: url(../ztimg/close.png);
+    background-size: contain;
+}

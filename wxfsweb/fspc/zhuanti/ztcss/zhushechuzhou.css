@@ -1,0 +1,155 @@
+body,div,img,p,a{width: 100% }
+
+.banner{
+    font-size: 0
+}
+
+.be_after{
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    background: #9b59b6;
+    font-size: 0
+}
+.betxt{
+    width: 40%;
+    height: 70px;
+    padding-top: 10px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    color:#fff;
+}
+.before,
+.after{
+    position: relative;
+    width:30%;
+    height: 100px;
+}
+.span{
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    right:2px;
+    width: 55px;
+    height:15px;
+    background: #361e52;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 12px;
+    text-align: center;
+    
+}
+.before{
+   
+     background: url(../ztimg/zhushechuzhou/chouzhou10000.jpg) no-repeat 50% 50%;
+}
+.after{
+     height: 100px;
+   background: url(../ztimg/zhushechuzhou/chouzhou20000.jpg) no-repeat 50% 50%;
+}
+.order_wrap{
+    padding-top: 30px;
+    height: 90px;
+    background: #9b59b6;
+}
+.p_order_top,
+.p_order_bottom{
+    color: #fff;
+}
+
+.inp_top,
+.inp_bottom {
+    color: #9b59b6;
+}
+
+#send_top,
+#send_bottom{
+    color: #9b59b6;
+    background-color:#fff ;
+}
+.result_top {
+    color: #fff;
+}
+.section{
+    width: 96%;
+    margin: 0 auto;
+}
+.section1 h2,.section3 h2{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color:#333;
+    font-weight: 400;
+}
+.section1 h6,.section2 h6{
+    width: 96%;
+    padding-left: 5px;
+    margin: 5px auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 200;
+    box-sizing: border-box;
+    
+}
+.sh6{
+    color:#9b59b6;
+}
+.section1 p{
+    color:#333;
+    font-size: 14px;
+    line-height: 25px;
+    text-indent: 1em;
+}
+
+.section2 h4{
+    width: 96%;
+    height: 38px;
+    line-height: 39px;
+    margin: 10px auto;
+    padding-left: 15px;
+    background: #b27dbe;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section2 p{
+    font-size: 14px;
+    width: 96%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    line-height: 25px;
+    color:#333;
+}
+.a_link {
+    background-color: #9b59b6;
+    color: #fff;
+}
+.foot{
+    background:#9b59b6;
+}
+
+.footlink{
+    color:#fff;
+}
+.link1,.link3{
+   background:#9b59b6;
+}
+.link2{
+    color:#9b59b6;
+    background:#fff;
+}
+#ad{
+    background: url(../ztimg/adtc.gif) no-repeat;
+}
+  
+.ad_close{
+    background: url(../ztimg/close.png);
+    background-size: contain;
+}
+.H20-gray{
+    height: 20px;
+}

@@ -1,0 +1,114 @@
+@charset "utf-8";
+/*重置样式*/
+body,div,p,ul,ol,dl,dt,dd,li,form,input,table,th,td,img,h1,h2,h3,h4,h5,h6 { margin: 0;padding: 0;}
+
+body { background: #FFF; color: #000; font-size: 16px; font-style: normal; font-family:'Microsoft Yahei','微软雅黑','Simsun','Arial', sans-serif;}
+address,caption,dfn,th,var,cite,code,i,em,s,label,input,select,textarea{font-style:normal;font-weight:normal;font-family:inherit;}
+input[type="submit"],input[type="reset"],input[type="button"]{cursor:pointer;}
+select,input,textarea{font-family:inherit;margin:0;}
+li { list-style:none;}
+img { border:none; background:none;}
+a { text-decoration:none; color:#000;}
+a:hover { text-decoration:none; }
+table { border-spacing:0; border-collapse:collapse;}
+/*通用*/
+.hide {display: none;}
+.flt {float:left;}
+.frt {float:right;}
+.clear { clear: both;}
+.clearfix:before, 
+.clearfix:after { display: table; line-height: 0; content: "";}
+.clearfix:after { clear: both;}
+
+/*头部样式共用*/
+.wrap{
+    min-height: 500px;
+}
+.headwrap{
+	width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 100;
+}
+.head {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #bc8c41,#f4e282,#996d33);
+
+}
+.head span{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background:url(../ztimg/logo.png) no-repeat 50% 50%;
+    background-size:contain;
+}
+
+.contain{
+    min-height: 500px;
+}
+
+.empty{
+    width: 100%;
+    height: 50px;
+}
+
+/*底部样式共用*/
+
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    box-shadow:  0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.footlink{
+    display: block;
+    float: left;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.link2{
+    width: 34%;
+}
+
+/*广告弹窗样式*/
+#ad{
+    position: fixed;
+    width: 278px;
+    height: 275px;
+    left: 50%;
+    top:50%;
+    margin-left: -139px;
+    margin-top: -138px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -moz-box-shadow: 0 0 20px rgba(10,2,4,0.75);
+    -webkit-box-shadow: 0 0 20px rgba(10,2,4,0.75);
+    box-shadow: 0 0 20px rgba(10,2,4,0.75);
+    z-index: 101;
+}
+  
+.ad_close{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    cursor: pointer;
+}
+#ad a{
+    position: absolute;
+    display:block;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    z-index: 300;
+    opacity: 0;
+}

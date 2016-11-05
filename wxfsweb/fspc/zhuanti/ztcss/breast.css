@@ -1,0 +1,155 @@
+body,div,img,p,a{width: 100%}
+
+.cut-line{
+    padding-top: 30px;
+    height: 90px;
+    background:#d39300;
+}
+.breast_order {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    color: #d39300;
+}
+.inp_top,
+.inp_bottom {
+    background-color: #fff;
+    color:#d39300;
+}
+#send_top{
+    color: #d39300;
+    background-color: #fff;
+}
+#send_bottom{
+    color: #fff;
+    background-color: #d39300;
+}
+.result_top {
+    color: #fff;
+}
+
+.result_bottom {
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #d39300;
+    font-weight: 600;
+}
+.section{
+    min-height: 100px;
+    padding-bottom: 20px;
+}
+.sec-h1{
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px 0;
+    height: auto;
+    font-size: 0;
+    text-align: center;
+}
+
+.s1{ 
+    height: auto;
+}
+.s1 li{
+    float: left;
+    width: 33.3%;
+    height: auto;
+    font-size: 0;
+}
+.s1-span{
+    display: inline-block;
+    width: 90%;
+    margin:0 5%;
+    height: auto;
+    text-align: center;
+    
+}
+
+.section2{
+    background: #f0f0f0;
+}
+.hurt{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    font-size: 0;
+}
+.section3,.section4{
+    padding-bottom: 10px;
+}
+.section3 p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color:#666666;
+    padding-bottom: 10px;
+}
+.promise{
+    width: 90%;
+    min-height:  100px; 
+    text-align: center;
+    margin: 0 auto;
+    font-size:0;
+}
+.h12{
+    height: 12px;
+}
+.p3{
+    position: relative;
+}
+.p3 a{
+    position: absolute;
+    display: block;
+    height: 20%;
+    top:18%;
+    opacity:0;
+}
+.case{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.btn{
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    background: url(../ztimg/breast/zxBtnbg.png) no-repeat center center;
+    background-size: contain;
+    margin: 10px auto 0;
+    text-align: center;
+}
+.btn1{
+    width: 60%;
+    height: 50px;
+    line-height: 50px;
+    background: url(../ztimg/breast/zxBtnbg2.png) no-repeat center center;
+    background-size: contain;
+    margin: 10px auto 0;
+    text-align: center;
+}
+.foot{
+    background:#b27429;
+}
+.footlink{
+    color:#fff;
+}
+.link1,.link3{
+   background:#b27429;
+}
+.link2{
+    color:#b27429;
+    background:#fff;
+}
+#ad{
+    background: url(../ztimg/adtc.gif) no-repeat;
+}
+  
+.ad_close{
+    background: url(../ztimg/close.png);
+    background-size: contain;
+}
+

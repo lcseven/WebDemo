@@ -1,0 +1,182 @@
+.formbox{
+    padding: 20px 0 0 360px;
+    min-height:450px;
+    background: #e1e4e9;
+}
+.formmod{
+    width: 512px;
+    height: 450px;
+    background: #fff;
+}
+.formmod2{
+    width: 477px;
+    height: 450px;
+    background: url(../images/orderbg.jpg) no-repeat #919ec1;
+
+}
+.formtilte{
+    width: 512px;
+    margin-top: 15px;
+    height: 40px;
+    font-size: 16px;
+   line-height: 40px;
+    color: #666;
+   text-align: center;
+    
+}
+.formbody{
+    width: 432px;
+    padding: 0 0 0 80px;
+    height: 396px;
+}
+.formbody p,.ordermsg{
+    padding: 5px 0;
+    width: 432px;
+    height: 50px;
+    font: normal 18px 'Microsoft Yahei';
+    line-height: 50px;
+    color: #666;
+    
+}
+.dline{
+    display: inline-block;
+    font: normal 18px 'Microsoft Yahei';
+    color: #666;
+}
+.formbody p{
+    position: relative;
+}
+
+.formbody p .amount{
+    display: inline-block;
+    width: 200px;
+    padding: 7px 30px 7px 10px;
+    font-size: 16px;
+    border: 1px solid #b5b5b5;
+    color: #999;
+}
+.unit{
+    position: absolute;
+    right: 35px;
+}
+.formbody p .star,.star{
+    display: inline-block;
+    width: auto;
+    height: 37px;
+    padding: 0 0 0 10px;
+    font: normal 18px 'Microsoft Yahei';
+    line-height: 37px;
+    color: #ffc660;
+}
+.checkbox{
+    display: inline-block;
+    position: relative;
+}
+input[type='radio']{    
+    opacity: 0;
+    position: absolute;
+    top:2px;
+    left: 2px;
+    width: 70px;
+    height: 30px;
+}
+
+.checkbox label,.checkbox label i {
+    display: inline-block;
+    width: 77px;
+    height: 35px;
+    font: normal 18px 'Microsoft Yahei';
+    
+}
+.checkbox label{
+    margin-right: 2px;
+    background: #cdcdcd;
+    cursor: pointer;
+}
+.checkbox label i {
+     line-height: 35px;
+    color: #fff;
+    text-align: center;    
+}
+input[type='radio']:checked+label{
+    background: #ffc660;
+}
+
+.formcode{
+    display: inline-block;
+    width: 100px;
+    padding: 7px 10px 7px 10px;
+    font-size: 16px;
+    border: 1px solid #b5b5b5;
+    color: #999;
+}
+.s-code{
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.ordermsg{
+    width: 430px;
+    height: 70px;
+    padding: 10px 0 20px 0;
+}
+.orderin{
+    display: inline-block;
+    width: 240px;
+    height: 70px;
+    font: normal 16px 'Microsoft Yahei';
+    color: #999;
+    vertical-align: text-top;
+    border: 1px solid #b5b5b5;
+}
+.orderbtn{
+    width: 240px;
+    height: 42px;
+    margin-left: 85px;
+    font: normal 16px 'Microsoft YaHei';
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background: -webkit-linear-gradient(top, #ffc660 0%,#e6a021 100%);
+    cursor: pointer;
+}
+.ordertips{
+    display: inline-block;
+    width:80px;
+    height: 40px;
+    margin-left: 5px;
+    font: normal 16px 'Microsoft Yahei';
+    color:#5c76d5;
+    cursor: pointer;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.zzlogin{
+    height: 357px;
+    padding-bottom: 30px;
+}
+
+.login-1{
+    position: relative;
+}
+
+.login-bg-1,.login-box-1{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 280px;
+    height: 227px;
+    padding:  15px 15px 15px 15px;
+}
+
+.login-bg-1{
+       background:#cfd9f2;
+           filter: alpha(opacity=60);
+  -webkit-opacity: 0.6;
+     -moz-opacity: 0.6;
+   -khtml-opacity: 0.6;
+          opacity: 0.6; 
+}

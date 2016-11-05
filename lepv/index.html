@@ -1,0 +1,471 @@
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>设备检测</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/layout.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/dcalendar.picker.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/echarts.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid padding0 wrap">
+
+		<div class="row ">
+			<!--left control-menu start-->
+			<div class="col-md-2  left-nav-wrap">
+				<div class="logo">
+					<img src="images/logo.png" alt="logo">
+				</div>
+				<ul class="left-nav-bar">
+					<li>
+						<i class="left-li-active">
+						<em class="flt"><span class="glyphicon glyphicon-list"></span></em>电站列表<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span></em><em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span></em></i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+
+					</li>
+					<li>
+						<i>
+						<em class="flt">
+						<span class="glyphicon glyphicon-wrench"></span>
+						</em>故障信息
+						<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span>
+						</em>
+						<em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span>
+						</em>
+						</i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+					</li>
+					<li>
+						<i>
+						<em class="flt">
+						<span class="glyphicon glyphicon-folder-open"></span>
+						</em>数据图表
+						<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span>
+						</em>
+						<em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span>
+						</em>
+						</i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+					</li>
+					<li>
+						<i>
+						<em class="flt">
+						<span class="glyphicon glyphicon-book"></span>
+						</em>报表导出
+						<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span>
+						</em>
+						<em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span>
+						</em>
+						</i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+					</li>
+					<li>
+						<i>
+						<em class="flt">
+						<span class="glyphicon glyphicon-ok-sign"></span>
+						</em>设置
+						<em class="frt right"><span class="glyphicon glyphicon-chevron-right"></span>
+						</em>
+						<em class="frt down"><span class="glyphicon glyphicon-arrow-down"></span>
+						</em>
+						</i>
+						<dl class="left-sub-nav">
+							<dt>电站概览</dt>
+							<dt>电站详细</dt>
+							<dt>设备列表</dt>
+							<dt>对比</dt>
+							<dt>CRUD</dt>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!--left control-menu end-->
+			<!--right body start-->
+			<div class="col-md-10 main-contain-wrap ">
+				<!--right-head-nav start-->
+				<div class="header clearfix">
+					<div class="header-nav-wrap flt">
+						<ul class="header_nav_list clearfix">
+							<li class="header_nav header-nav-active flt">智能监控</li>
+							<li class="header_nav flt">电站设计</li>
+							<li class="header_nav flt">售后维护</li>
+							<li class="header_nav flt">电子商务</li>
+
+						</ul>
+
+					</div>
+					<div class="user-infro frt">
+						Welcome
+						<img src="images/szj.png" alt="user-infro img">宋仲基
+						<span class="split-line"></span>
+						<a href="" class="back">退出</a>
+					</div>
+				</div>
+				<!--right-head-nav end-->
+				<div class="header-sub-nav">
+					<span>当前位置：</span>
+					<a href="#">首页</a> &gt;
+					<a href="#">数据图表</a> &gt;
+					<a href="#">设备图表</a> 
+				</div>
+				<!--right-container srart-->
+				
+					<div class="row body-container-wrap">
+						<!--right-container-equipment list srart-->
+						<div class="col-md-3">
+							<div class="equipment-list-wrap">
+								<div class="equipment-list-title"><i class="ft16"><span class="glyphicon glyphicon-list-alt"></span></i>&nbsp;&nbsp;设备列表
+
+								</div>
+
+								<div class="equipment-nav equipment-nav-active">
+									<div class="equipment-nav-title mbt10"><span class="plus">+</span>
+										<span class="less">-</span>
+										<i class="mlt10 equipment-icon ft16">--<span class="glyphicon glyphicon-list-alt"></span></i>
+										<a href="">&nbsp;&nbsp;逆变器</a>
+									</div>
+
+									<ul class="sub-equipment-nav ">
+										<li>--IV2CFD446</li>
+										<li>--IV2CFD446</li>
+										<li>--IV2CFD446</li>
+										<li>--IV2CFD446</li>
+									</ul>
+								</div>
+
+								<div class="equipment-nav equipment-nav-active">
+									<div class="equipment-nav-title mbt10"><span class="plus">+</span>
+										<span class="less">-</span>
+										<i class="mlt10 equipment-icon ft16">--<span class="glyphicon glyphicon-list-alt"></span></i>
+										<a href="">&nbsp;&nbsp;逆变器</a>
+									</div>
+
+									<ul class="sub-equipment-nav ">
+										<li>--IV2CFD446
+										</li>
+										<li>--IV2CFD446</li>
+										<li>--IV2CFD446</li>
+										<li>--IV2CFD446</li>
+									</ul>
+								</div>
+								<div class="equipment-nav">
+									<div class="equipment-nav-title mbt10"><span class="plus">+</span>
+										<span class="less">-</span>
+										<i class="mlt10 equipment-icon ft16">--<span class="glyphicon glyphicon-list-alt"></span></i>
+										<a href="">&nbsp;&nbsp;逆变器</a>
+									</div>
+
+									<ul class="sub-equipment-nav sub-equipment-nav-none">
+										<li>--IV2CFD446</li>
+										<li>--IV2CFD446</li>
+										<li>--IV2CFD446</li>
+										<li>--IV2CFD446</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--right-container-equipment list end-->
+						<!--right-container-chart start-->
+						<div class="col-md-9 ">
+							<div class="chart-container-wrap">
+
+								<div class="search-wrap ">
+									<select id="choose-y-m-d" name="date">
+
+                                         
+										<option value="日">日</option>
+										<option value="月">月</option>
+
+									</select>
+									<a class="a-mydatepicker  mlt10" href="javascript:;">
+										<input id='mydatepicker' class="mydatepicker" placeholder="7/22/2016" type='text' />
+										<img class="frt" src="images/clander.png" width="20px" alt="">
+									</a>
+									<select id="choose-power" class="mlt10" name="power">
+
+
+										<option value="100w">功率</option>
+										<option value="200w">功率</option>
+
+									</select>
+
+
+									<button class="search-btn mlt10">查询</button>
+								</div>
+
+								<!--柱状图&折线图start-->
+								<div id="main" style="height:323px;"></div>
+								<!--柱状图&折线图end-->
+								<!--table start-->
+								<table class='bottom-table ft12'>
+									<tr>
+										<th>column</th>
+										<th>7:00</th>
+										<th>8:00</th>
+										<th>9:00</th>
+										<th>10:00</th>
+										<th>11:00</th>
+										<th>12:00</th>
+									</tr>
+									<tr>
+										<td>测试站一</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+									</tr>
+									<tr>
+										<td>测试站二</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+									</tr>
+									<tr>
+										<td>测试站三</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+									</tr>
+									<tr>
+										<td>测试站四</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+										<td>121</td>
+									</tr>
+								</table>
+				  			     <!--table end-->
+								
+							</div>
+						</div>
+						<!--right-container-chart start-->
+					</div>
+				
+				<!--right-container end-->
+				<!--foot start-->
+				<div class="foot">
+									<p>2016 &copy;Le-PV operation &amp; maintenace platform</p>
+								</div>
+				<!--foot end-->
+			
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('body').on('click', 'em.right', function () {
+				$(this).hide();
+				$(this).next().show();
+				$(this).parent().addClass('left-li-active');
+				$(this).parent().siblings().show();
+
+
+			});
+			$('body').on('click', 'em.down', function () {
+
+				$(this).hide();
+				$(this).prev().show();
+				$(this).parent().removeClass('left-li-active');
+				$(this).parent().siblings().hide();
+
+			});
+			$('body').on('click', 'li.header_nav', function () {
+				$(this).addClass('header-nav-active');
+				$(this).siblings().removeClass('header-nav-active');
+
+			});
+			$('body').on('click', 'span.plus', function () {
+				$(this).hide();
+				$(this).next().show();
+				$(this).parent().parent().addClass('equipment-nav-active');
+
+
+			});
+			$('body').on('click', 'span.less', function () {
+				$(this).hide();
+				$(this).prev().show();
+				$(this).parent().parent().removeClass('equipment-nav-active');
+
+
+			});
+
+			$('#mydatepicker').dcalendarpicker(
+
+			); //初始化日期选择器
+			$('#mycalendar').dcalendar(); //初始化日历  
+
+			/*折线柱状图代码*/
+			var myChart = echarts.init(document.getElementById('main'));
+
+			// 指定图表的配置项和数据
+			var option = {
+
+
+				tooltip: {
+					trigger: 'axies',
+					backgroundColor: 'rgba(65,82,101,0.7)',
+					borderColor: 'rgba(0,0,0,0)',
+					borderWidth: '50px'
+				},
+				toolbox: {
+
+
+					feature: {
+						dataView: {
+							show: true,
+							readOnly: false
+						},
+						magicType: {
+							show: true,
+							type: ['line', 'bar']
+						},
+						restore: {
+							show: true
+						},
+						saveAsImage: {
+							show: true
+						}
+					},
+					show: false,
+				},
+				color: ['#87e67e', '#2a918e'],
+				backgroundColor: '#303642',
+
+				textStyle: {
+					color: '#fff',
+					fontStyle: 'normal',
+					fontSize: 12,
+				},
+				legend: {
+
+					show: ['true'],
+					data: ['tempertaure', 'rainfall'],
+					width: '100px',
+					height: '50px',
+					top: '100px',
+					left: '200px',
+					orient: 'vertical',
+					backgroundColor: 'rgba(0, 0, 0,0.7)',
+					textStyle: {
+						color: '#fff',
+
+					}
+
+				},
+				xAxis: [
+					{
+						type: 'category',
+						data: ['', '', '', '', '', '', '', '', '', '', '', '']
+        }
+    ],
+				yAxis: [
+
+					{
+						type: 'value',
+						name: '温度',
+						min: 0,
+						max: 20,
+						interval: 5,
+						axisLabel: {
+							formatter: '{value} °C'
+						}
+        },
+					{
+						type: 'value',
+						name: '水量',
+						min: 0,
+						max: 200,
+						interval: 50,
+						axisLabel: {
+							formatter: '{value} ml'
+						}
+        }
+    ],
+				series: [
+
+					{
+						name: 'tempertaure',
+						type: 'line',
+						yAxisIndex: 0,
+						data: [2.0, 3.2, 4.3, 5.5, 6.3, 7.2, 8.9, 10.4, 9.0, 7.0, 4.0, 3.2]
+        },
+					{
+						name: 'rainfall',
+						type: 'bar',
+						yAxisIndex: 1,
+						data: [50, 60, 65, 70, 100, 70.7, 120, 160, 100, 80, 60, 50]
+        },
+    ]
+			};
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+			
+			$(".bottom-table tr:even").addClass("table-active");
+			$(".bottom-table tr:odd").css("height","55px");
+			
+
+		});
+	</script>
+	<script type="text/javascript">
+		$(function () {
+
+		})
+	</script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/dcalendar.picker.js"></script>
+</body>
+
+</html>

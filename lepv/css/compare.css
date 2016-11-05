@@ -1,0 +1,110 @@
+#body-container-wrap{
+	position: relative
+}
+.em-left,
+.em-right{
+	font-size: 30px;
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 100px;
+	font-weight: 100;
+	top:440px;
+	z-index: 100;
+	cursor: pointer;
+}
+.em-left{
+	left: 5px;
+}
+.em-right{
+	right: 5px;
+}
+.itembox-wrap{
+	width: 90%;
+	margin-top: 36px;
+	height: 640px;
+	background-color:#303642;
+	border-bottom: 1px solid #956b21;
+    border-top: 1px solid #956b21;
+}
+.mlf{
+	margin-left: 8%;
+}
+.mrf{
+	margin-left: 2%;
+}
+.equipment-title{
+	height: 50px;
+	text-align: center;
+	line-height:48px;
+	color: #fff;
+	border-bottom:1px solid #505c6c;
+	
+}
+.power-table{
+	width: 80%;
+	margin-left: 10%;
+	color:#8f95a1
+}
+.power-table tr{
+	text-align: center;
+	height: 40px;
+	border-bottom: 1px solid #505c6c;
+}
+.chart-wrap{
+	margin-top: 36px;
+	border-top:1px solid #505c6c
+}
+.power-select{
+	position: relative;
+	padding-top: 30px;
+	height: 60px;
+	
+}
+.power-select i{
+	display: inline-block;
+	margin: 0px 20px;
+	height: 25px;
+	font-size: 14px;
+}
+input[type='radio']{
+    opacity: 0;
+	filter:alpha(opacity=50); 
+    position: absolute;
+    width: 25px;
+    height: 25px;
+	cursor: pointer;
+	margin:0;
+}
+label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 0;
+  background: #fff;
+  cursor: pointer;
+}
+label span{
+     display: inline-block;
+     width: 25px;
+      height: 25px;
+      font: normal 12px 'Microsoft YaHei';
+      color: #000;
+      text-align: center;
+      line-height: 25px;
+}
+
+input[type='radio']:checked+label {
+    
+  background: #ccc;  
+}
+.date-seclect{
+	position: absolute;
+	top:30px;
+	left: 200px;
+}
+.mydatepicker{
+	width: 100px;
+	height: 25px;
+	color: #000;
+}

@@ -1,0 +1,133 @@
+
+.equipment-list-wrap {
+	margin: 15px 0 0 20px;
+    padding: 30px 0 0 40px;
+	height: 680px;
+	background-color: #303642;
+}
+.equipment-nav {
+	position: relative;
+	margin-left: 5px;
+	padding-bottom: 20px;
+	border-left: 1px dashed #fff;
+}
+.equipment-nav a:hover {
+	color: orange;
+}
+.equipment-nav:last-child {
+	padding-bottom: 0px;
+	border: none;
+}
+.sub-equipment-nav {
+	display: none;
+	margin-left: 30px;
+	border-left: 1px dashed #fff;
+}
+.sub-equipment-nav li {
+	cursor: pointer;
+}
+.plus,
+.less {
+	position: absolute;
+	top: 4px;
+	left: -5px;
+	width: 12px;
+	height: 12px;
+	line-height: 7px;
+	color: #fff;
+	background-color: #303642;
+	border: 1px solid #fff;
+	text-align: center;
+}
+.plus {
+	display: block;
+}
+.less {
+	display: none;
+}
+.equipment-icon {
+	display: inline-block;
+}
+.equipment-nav-active .sub-equipment-nav {
+	display: block;
+}
+.equipment-nav-active .plus {
+	display: none;
+}
+.equipment-nav-active .less {
+	display: block;
+}
+.chart-container-wrap {
+	width:95%;
+    margin-left: 3%;
+}
+.search-wrap {
+	width: 533px;
+	padding-top: 10px;
+	height: 40px;
+	margin-bottom: 30px;
+}
+#choose-y-m-d,
+#choose-power {
+	width: 136px;
+	height: 26px;
+	background: #aaaeb9;
+	color: black;
+	border: none;
+}
+.mydatepicker {
+	width: 136px;
+	height: 26px;
+	background: #aaaeb9;
+	color: black;
+	border: none;
+}
+.a-mydatepicker {
+	position: relative;
+	display: inline-block;
+	width: 136px;
+	height: 26px;
+}
+.a-mydatepicker img {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+::-webkit-input-placeholder {
+	color: #000;
+}
+::-moz-placeholder {
+	color: #000;
+}
+:-moz-placeholder {
+	color: #000;
+}
+.search-btn {
+	width: 66px;
+	height: 26px;
+	color: #000;
+	background-color: #6ac335;
+	border: none;
+}
+.bottom-table {
+	width: 100%;
+	margin-top: 30px;
+	color: #dddddd;
+}
+.bottom-table th,
+.bottom-table td {
+	text-align: center;
+	vertical-align: middle!important;
+	border-bottom: 1px solid #505b6d;
+}
+.bottom-table th {
+	font-size: 14px;
+	color: #fff;
+}
+.table-active {
+	background-color: #303642;
+	height: 50px;
+}
+#main{
+	margin: 0 auto;
+}

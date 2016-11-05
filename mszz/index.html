@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>首页-民生转赚</title>
+    <link href="css/master.css" rel="stylesheet" type="text/css">
+    <!-- 引入焦点图.js -->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.flexslider').flexslider({
+                directionNav: true,
+                pauseOnAction: false
+            });
+        });
+    </script>
+    <!-- 引入 echarts.js -->
+    <script src="js/echarts.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        <!--头部-->
+        <div class="top">
+            <div class="tops clearfix ">
+                <div class="top1">财富热线&nbsp:&nbsp<b>40069-95568转2</b>
+                </div>
+                <div class="top2"><a href="souhunews.html">新手指南</a>
+                </div>
+                <div class="top3">欢迎来到民生转赚！&nbsp<a href="#">[登录]</a>&nbsp<a href="#">[注册]</a>
+                </div>
+                <div class="top4"></div>
+                <div class="top5">
+                    <ul class="clearfix">
+                        <div class="ll">
+                            <li class="app">
+                                <div class="appicons">
+                                    <img src="images/appicon.jpg">
+                                </div>
+                            </li>
+                            <li><a href="#">下载APP</a>
+                            </li>
+                        </div>
+                        <div class="rr">
+                            <li class="wechat">
+                                <div class="wxicons">
+                                    <img src="images/wexinicon.png">
+
+                                </div>
+                            </li>
+                            <li>关注微信</li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="top6"><a href="#">帮助中心</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="headbox">
+            <div class="head content">
+                <div class="logo flt">
+                    <img src="images/logo.png">
+                </div>
+                <div class="tabnav frt">
+                    <ul>
+                        <li><a href="#"> 资产</a>
+                        </li>
+                        <li><a href="#">小区</a>
+                        </li>
+                        <li class="cur"><a href="#">购物</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  首页导航-->
+        <div class="containnav">
+            <ul class="clearfix">
+                <li class="cur"><a href="index.html">首页</a>
+                </li>
+                <li><a href="to-order.html">我要定制</a>
+                </li>
+                <li><a href="#">我要赚钱</a>
+                </li>
+                <li><a href="#">转让专区</a>
+                </li>
+                <li><a href="zzloginpage.html">我的账户</a>
+                </li>
+                <li><a href="#">商旅优惠</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--主体部分-->
+        <div class="contain">
+            <!--   用户登录-->
+            <div class="login content">
+                <div class="login-bg">
+                </div>
+                <div class="login-box">
+                    <div class="login-user">
+                        <i class="icon-user"></i>
+                        <input class="lg-user" type="text" placeholder="请输入用户名/手机号">
+                    </div>
+                    <div class="login-pass">
+                        <i class="icon-pass"></i>
+                        <input class="lg-pass" type="password" placeholder="请输入登录密码">
+                    </div>
+                    <div class="login-validation">
+                        <i class="icon-validation"></i>
+                        <input class="lg-validation" type="text" placeholder="请输入验证码">
+                        <img class="codepic" src="images/createVerfyCode.jpg">
+                    </div>
+                    <div class="login-btn">
+                        <input class="btn-register" type="button" value="登录">
+                    </div>
+                    <div class="login-link">
+                        <a class="flt"> 忘记密码？</a>
+                        <a class="rg frt">免费注册</a>
+                    </div>
+                </div>
+            </div>
+            <!--焦点图-->
+            <div class=" focus">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li style="background:url(images/mss-1.jpg) 50% 0 no-repeat;"></li>
+                        <li style="background:url(images/mss-3.jpg) 50% 0 no-repeat;"></li>
+                        <li style="background:url(images/mss-2.jpg) 50% 0 no-repeat;"></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!-- 新闻板块-->
+            <div class="newshr ">
+                <div class="news content ">
+                    <!-- 焦点图下面的新闻box-->
+                    <div class="mode clearfix">
+                        <div class="newsbox flt">
+                            <div class="item-title">
+                                <h5 class="flt"> 转赚数据</h5>
+
+                            </div>
+                            <div class="news-bd">
+
+                                <div id="chdata"></div>
+
+
+                            </div>
+                        </div>
+                        <div class="newsbox ml28 flt">
+                            <div class="item-title">
+                                <h5 class="flt"> 转赚世界</h5>
+                                <span class="frt"> <a href="#">查看更多&gt;&gt;</a></span>
+                            </div>
+                            <div class="news-bd ">
+                                <ul>
+                                    <li>
+                                        <a href="#">这里是新闻标题 
+                            <span class="frt">2016-6-26</span>
+                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">这里是新闻标题 
+                            <span class="frt">2016-6-26</span>
+                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">这里是新闻标题 
+                            <span class="frt">2016-6-26</span>
+                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">这里是新闻标题 
+                            <span class="frt">2016-6-26</span>
+                            </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        <div class="newsbox  frt">
+                            <div class="item-title">
+                                <h5 class="flt"> 转赚预告</h5>
+                                <span class="frt"> <a href="#">查看更多&gt;&gt;</a></span>
+                            </div>
+                            <div class="news-bd ">
+                                <ul>
+                                    <li>
+                                        <a href="#">这里是新闻标题 
+                            <span class="frt">2016-6-26</span>
+                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">这里是新闻标题 
+                            <span class="frt">2016-6-26</span>
+                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">这里是新闻标题 
+                            <span class="frt">2016-6-26</span>
+                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">这里是新闻标题 
+                            <span class="frt">2016-6-26</span>
+                            </a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--  投资新闻-->
+                    <div class="mode2 content ">
+                        <div class="mode2-title clearfix">
+                            <h2 class="flt"><a href="#">正在热销产品</a>
+                        </h2>
+                            <i class="frt"><a href="#">查看更多&gt;&gt;</a></i>
+
+
+                        </div>
+                        <div class="mode2-bd">
+                            <div class="bd-box clearfix">
+                                <div class="bd-box-l flt">
+                                    <div class="bd-box-lt">新友专享
+                                    </div>
+                                    <div class="bd-box-lf">
+                                        <div class="bd-lf-title clearfix">
+                                            <i class="zhuan flt">转</i>
+                                            <h1 class="flt"><a href="#">奕享财富-3058</a></h1>
+                                            <span class="flt">50000元起投</span>
+                                            <div class="cal">
+                                                <a href="javascript:;"></a>
+                                            </div>
+                                        </div>
+                                        <div class="process  clearfix">
+                                            <div class="bar flt">
+                                                <div class="shortbar"></div>
+                                            </div>
+                                            <div class="precent flt">50%
+                                            </div>
+                                        </div>
+                                        <div class="investnews">
+                                            <ul class="clearfix">
+                                                <li class="one">
+                                                    <div class="red-num">6.8<b>%</b>
+                                                    </div>
+
+                                                    <span>预期年化利率</span>
+                                                </li>
+                                                <li class="two">
+                                                    <div class="gray-num ">395 <i>天</i>
+                                                    </div>
+
+
+                                                    <span class="  small-gray  content1">理财期限</span>
+                                                </li>
+                                                <li>
+                                                    <div class="gray-num">114.55万</div>
+                                                    <span class="  small-gray  content1">可购金额</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="bd-box-r frt">
+                                    <div class="red-button"><a href="#"> 我要赚钱</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="bd-box mt10 clearfix">
+                                <div class="bd-box-l flt">
+                                    <div class="bd-box-lt">VIP私人定制高至7.0%
+                                    </div>
+                                    <div class="bd-box-lf">
+                                        <div class="bd-lf-title clearfix">
+                                            <i class="zhuan flt">转</i>
+                                            <h1 class="flt"><a href="#">新友专享-3051</a></h1>
+                                            <span class="flt">50000元起投</span>
+                                            <div class="cal">
+                                                <a href="javascript:;"></a>
+                                            </div>
+                                        </div>
+                                        <div class="process  clearfix">
+                                            <div class="bar flt">
+                                                <div class="shortbar"></div>
+                                            </div>
+                                            <div class="precent flt">30%
+                                            </div>
+                                        </div>
+                                        <div class="investnews">
+                                            <ul class="clearfix">
+                                                <li class="one">
+                                                    <div class="red-num">12.00<b>%</b>
+                                                    </div>
+                                                    <span>预期年化利率</span>
+                                                </li>
+                                                <li class="two">
+                                                    <div class="gray-num">7 <i>天</i>
+                                                    </div>
+
+                                                    <span class="  small-gray  content1">理财期限</span>
+                                                </li>
+                                                <li>
+                                                    <div class="gray-num">171.55万</div>
+                                                    <span class="  small-gray  content1">可购金额</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="bd-box-r frt">
+                                    <div class="red-button"><a href="#"> 我要赚钱</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="bd-box mt10 clearfix">
+                                <div class="bd-box-l flt">
+                                    <div class="bd-box-lt">可用加息券
+                                    </div>
+                                    <div class="bd-box-lf">
+                                        <div class="bd-lf-title clearfix">
+                                            <i class="zhuan flt">转</i>
+                                            <h1 class="flt"><a href="#">年沣盈-3064</a></h1>
+                                            <span class="flt">50000元起投</span>
+                                            <div class="cal">
+                                                <a href="javascript:;"></a>
+                                            </div>
+                                        </div>
+                                        <div class="process  clearfix">
+                                            <div class="bar flt">
+                                                <div class="shortbar"></div>
+                                            </div>
+                                            <div class="precent flt">70%
+                                            </div>
+                                        </div>
+                                        <div class="investnews">
+                                            <ul class="clearfix">
+                                                <li class="one">
+                                                    <div class="red-num">6.5<b>%</b>
+                                                    </div>
+                                                    <span>预期年化利率</span>
+                                                </li>
+                                                <li class="two">
+                                                    <div class="gray-num">395<i>天</i>
+                                                    </div>
+
+                                                    <span class="  small-gray  content1">理财期限</span>
+                                                </li>
+                                                <li>
+                                                    <div class="gray-num">171.55万</div>
+                                                    <span class="  small-gray  content1">可购金额</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="bd-box-r frt">
+                                    <div class="red-button"><a href="#"> 我要赚钱</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--底部开始-->
+        <div class="foot content">
+            <div class="part-title">
+                <h2>合作伙伴 </h2>
+
+            </div>
+            <div class="part-pic clearfix">
+                <div class="pre-btn flt"></div>
+                <div class="swipper flt">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="images/19bc3c2a-d91e-482c-86b3-c368c0c8660e.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/26bb37b2-2f30-4a6a-8938-6e7c030a453e.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/aca607fe-d157-49ea-b0af-2f11655e8e72.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/2cdcb733-782d-4864-aa67-67adc29fd0e5.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/19bc3c2a-d91e-482c-86b3-c368c0c8660e.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/aca607fe-d157-49ea-b0af-2f11655e8e72.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nex-btn frt"></div>
+
+            </div>
+            <div class="footer-feature clearfix">
+                <div class="footblock">
+                    <div class="footblock-list">
+                        <div class="td1">
+                            <a href="#">
+                                <h5>关于我们</h5>
+                            </a>
+                        </div>
+                        <div class="tt"><a href="#">平台介绍</a>
+                        </div>
+                        <div class="tt"><a href="#">公司简介</a>
+                        </div>
+                        <div class="tt"><a href="#">联系我们</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footblock">
+                    <div class="footblock-list">
+                        <div class="td2">
+                            <a href="#">
+                                <h5>常见问题</h5>
+                            </a>
+                        </div>
+                        <div class="tt"><a href="#">新手指南</a>
+                        </div>
+                        <div class="tt"><a href="#">常见问题</a>
+                        </div>
+                        <div class="tt"><a href="#">安全保障</a>
+                        </div>
+                        <div class="tt"><a href="#">收费标准</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footblock">
+                    <div class="wechat-qr">
+                        <div class="wechat-qr-title">
+                            扫描关注
+                            <br>关注民生转赚公众号
+
+                        </div>
+                        <div class="wechat-qrcode">
+                            <img src="images/wechat-qrcode.jpg">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footblock">
+                    <div class="wechat-qr">
+                        <div class="wechat-qr-title">
+                            扫码下载
+                            <br>下载民生转赚App
+
+                        </div>
+                        <div class="wechat-qrcode">
+                            <img src="images/wechat-app.jpg">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="two-footblock">
+                    <div class="bottom-seclet">
+                        <img src="images/bottom-logo.png">
+                        <div class="itsweb">
+                            <dt>民生电商旗下网站 ▼</dt>
+                            <div class=itslink>
+                                <a href="#">民生电商购物商城</a>
+                                <a href="#">民生电商购物商城</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-text">
+                        <div>全国服务热线（工作时间9:00-18:00）</div>
+                        <div class="tel">40069-95568转2</div>
+                        <div>QQ客服群：190981016</div>
+                        <div>客服邮箱：service@mszhuanzhuan.com</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="copyright">Copyright 2015 mszhuanzhuan.com All Rights Reserved
+            <a href="#"> 粤ICP备13067411号-8</a>
+        </div>
+
+        <!--侧边客服定位-->
+        <div class="slider-service clearfix">
+            <div class="r-slider flt "></div>
+            <div class="l-slider flt">
+                <a href="#" class="qq">QQ客服MM01</a>
+                <a href="#" class="qq">QQ客服MM02</a>
+                <a href="#" class="qq">加入官方QQ群</a>
+                <p style="margin-top:8px;">工作时间：
+                    <br>9:00-18:00</p>
+                <p style="font-size:12px;">客服热线：
+                    <br>40069-95568转2</p>
+                <div class="service-app">
+                    <i>
+                   <img src="images/wechat-app.jpg">
+               </i>
+                    <span>扫码下载APP</span>
+                </div>
+                <a href="#" class="qq">常见问题</a>
+                <a href="#" class="qq">新手指南</a>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+
+                $('.r-slider').hover(function () {
+                    $('.slider-service').animate({
+                        right: '0px'
+                    });
+                });
+
+                $('.wrap').click(function () {
+                    $('.slider-service').animate({
+                        right: '-150px'
+                    }, 1000);
+                });
+
+            });
+        </script>
+        <!-- 计算器弹窗和遮罩-->
+        <div class="fade"></div>
+        <div class="calbox">
+            <div class="calbox-header">
+                收益计算器
+                <span class="closeit"> 关闭</span>
+
+            </div>
+            <div class="calbox-body">
+                <div class="pay-inner">
+                    <p>
+                        <span>还款方式:</span>
+                        <input class="inner-01" type="text" value="一次性还本息" disabled="disabled">
+                    </p>
+
+                    <p>
+                        <span>投资金额:</span>
+                        <input class="inner-02" type="text">
+                        <i></i>
+                    </p>
+                    <p>
+                        <span>年化收益率:</span>
+                        <input class="inner-03" type="text">
+                    </p>
+                    <p>
+                        <span>借款期限:</span>
+                        <input class="inner-04" type="text" disabled="disabled">天
+                    </p>
+                    <p>
+                        <span>预期收益:</span>
+                        <em></em>
+                        元
+                    </p>
+                    <p>
+                        <span>预期本息合计:</span>
+                        <em></em>
+                        元
+                    </p>
+                </div>
+            </div>
+            <div class="calbox-foot">
+                <a href="javascript:;" class="acal">计算收益</a>
+            </div>
+        </div>
+    </div>
+    <!--  计算器遮罩效果呈现-->
+    <script>
+        $(document).ready(function () {
+            var w = $(document.body).height();
+            $.each($('.bd-box'), function (index) {
+                var x = $(this).find('.red-num').text(); //x=6.8%
+                var y = $(this).find('.gray-num').text(); //y=7天
+                var y1 = parseInt(y) //y1=7
+                $('.cal').eq(index).click(function () {
+                    $('.inner-04').val(y1);
+                    $('.inner-03').val(x);
+                    $('.calbox').css("display", "block");
+                    $('.fade').css({
+                        "display": 'block',
+                        "height": w
+                    });
+                });
+            });
+        $('.closeit').click(function () {
+                $('.calbox').css("display", "none");
+                $('.fade').css("display", "none");
+                $('.inner-02').val("");
+                $('.pay-inner').find('em').eq(0).text("");
+                $('.pay-inner').find('em').eq(1).text("");
+                $('.pay-inner').find('i').css("display", "none");
+            });
+
+        });
+    </script>
+    <!--  计算器计算本息-->
+    <script>
+        $(document).ready(function () {
+
+            $('.acal').click(function () {
+                var x = $('.inner-02').val();
+                if (x == null || isNaN(x) || x == "") {
+                    $('.pay-inner').find('i').css("display", "inline-block");
+                    $('.pay-inner').find('i').text("投资金额必须输入");
+
+
+                } else {
+                    $('.pay-inner').find('i').css("display", "none");
+                    var a = parseFloat($('.inner-03').val());
+                    var b = parseInt($('.inner-04').val());
+                    var c = parseInt($('.inner-02').val());
+                    var d = (a * b * c) / (36500);
+                    var e = parseInt(d);
+                    var f = c + e;
+                    $('.pay-inner').find('em').eq(0).text(e);
+                    $('.pay-inner').find('em').eq(1).text(f);
+                }
+
+            });
+
+        });
+    </script>
+    <!-- bar进度条的计算  -->
+    <script>
+        $(document).ready(function () {
+            $.each($('.process'),function () {
+                var x = $(this).find('.precent').text();
+                var x1 = parseInt(x);
+                var y = x1 * 5.4;
+                $(this).find('.shortbar').css('width', y);
+            });
+        });
+    </script>
+
+
+    <!-- 首页菜单定位-->
+    <script>
+        $(function () {
+            //获取要定位元素距离浏览器顶部的距离 
+            var navH = $(".containnav").offset().top;
+            //滚动条事件 
+            $(window).scroll(function () {
+                //获取滚动条的滑动距离 
+                var scroH = $(this).scrollTop();
+                //滚动条的滑动距离大于等于定位元素距离浏览器顶部的距离，就固定，反之就不固定 
+                if (scroH >= navH) {
+                    $(".containnav").css({
+                        "position": "fixed",
+                        "top": 0
+                    });
+                } else if (scroH < navH) {
+                    $(".containnav").css({
+                        "position": "static"
+                    });
+                }
+            })
+        })
+    </script>
+    <!--饼状图表插件-->
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('chdata'));
+
+         // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: null,
+                subtext: '赚友投资金额分布',
+                x: 'center',
+                y: '70%'
+            },
+            color: ['#5062ad', '#5c76d5', '#00afff', '#30d981']
+
+            ,
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: '5%',
+                y: '15%',
+                itemGap: 14,
+                data: ['100万以上', '50-100万', '5-50万', '5万以下']
+            },
+            series: [
+                {
+                    name: '转赚数据',
+                    type: 'pie',
+                    radius: '78%',
+                    center: ['70%', '45%'],
+                    data: [
+                        {
+                            value: 258,
+                            name: '100万以上'
+                        },
+                        {
+                            value: 120,
+                            name: '50-100万'
+                        },
+                        {
+                            value: 454,
+                            name: '5-50万'
+                        },
+                        {
+                            value: 168,
+                            name: '5万以下'
+                        },
+
+            ],
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+
+                    label: {
+                        normal: {
+                            show: false
+                        }
+                    },
+
+
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 5,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+        }
+    ]
+        };
+
+         // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+
+
+</body>
+
+</html>
