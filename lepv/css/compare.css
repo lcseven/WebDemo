@@ -1,5 +1,10 @@
-#body-container-wrap{
-	position: relative
+.body-container {
+	position: relative;
+	background: #3c4451;
+	height: 740px;
+}
+.body-container .col-md-6{
+	background: #3c4451;
 }
 .em-left,
 .em-right{
@@ -31,7 +36,9 @@
 	margin-left: 8%;
 }
 .mrf{
-	margin-left: 2%;
+		
+    margin-right: 8%;
+	margin-left: auto;
 }
 .equipment-title{
 	height: 50px;
